@@ -1,0 +1,11 @@
+#menu{
+    transform: translateX(-100%)
+}
+.menu{
+    transform: translateX(0%) !important;
+    transition: 0.5s;
+}
+.menu_2{
+    transition: 0.5s;
+}
+
