@@ -1,6 +1,20 @@
 const Menutoggle = document.getElementById("toggle")
 const Menu = document.getElementById("menu")
 const Close = document.getElementById("close")
+const news = document.getElementById("news")
+const Header = document.getElementById("header")
+
+window.addEventListener("scroll" , ( ) => {
+  
+  if(scrollY > 100){
+    Header.classList.add("shrink")
+  }else{
+    Header.classList.remove("shrink")
+  }
+
+
+
+})
 
 Menutoggle.addEventListener("click", () => {
     Menu.classList.add("menu")

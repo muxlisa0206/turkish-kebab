@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <header class="bg-[#BB2339] fixed z-1 w-full">
+    <header id="header" class="bg-[#BB2339] fixed z-50 w-full top-0 duration-500">
         <div class="container mx-auto px-[20px] flex justify-between items-center py-[20px]">
             <a href="/index.html"><img src="/assets/images/logo.png" alt="logo"></a>
             <ul class="hidden lg:flex gap-[60px] items-center">
@@ -56,9 +56,6 @@
 
     <ul id="menu"
         class="bg-[#BB2339] transform w-[50vw] h-screen rounded-br-[20px] fixed z-50 justify-center items-center flex flex-col gap-[30px]">
-        <li>
-            <a class="absolute top-10 left-10" href="/index.html"><img src="/assets/images/logo.png" alt="logo"></a>
-        </li>
         <li
             class="border-2 py-[15px] border-white max-w-[160px] sm:max-w-[250px] w-full flex items-center justify-center gap-[10px] rounded-[20px]">
             <img src="./assets/images/home_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -90,7 +87,89 @@
         </li>
     </ul>
 
+    <main>
 
+        <section>
+            <div class="container mx-auto px-[20px] pt-[150px]">
+                <div class="flex items-center gap-1">
+                    <a class="text-[14px] font-[400] text-[#AAAAAA] hover:text-[#BB2339]" href="/index.html">Home</a>
+                    <p class="text-[#AAAAAA]">|</p>
+                    <a class="text-[14px] font-[400] text-[#AAAAAA] hover:text-[#BB2339]" href="menu.html">News</a>
+                </div>
+
+                <div class="pt-[20px] pb-[20px] sm:pt-[40px] flex flex-col gap-[20px] sm;gap-[30px] items-center">
+                    <h1 class="font-[400] text-[32px] sm:text-[48px] text-[#242424] text-center capitalize">Contact us</h1>
+                    <img class="mt-[10px] w-[60px]" src="/assets/images/spoon.png" alt="qoshiq">
+                </div>
+
+                <div class="grid grid-cols-1 md:flex gap-[50px] pt-[-25px] sm:py-[50px]">
+
+                    <div class="flex flex-col gap-3">
+                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/phone.png" alt="phone"></div>
+                            <div>
+                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Phone number</h1>
+                                <a class="text-[14px] sm:text-[16px] text-[#242424] font-[400]" href="tel:884679073">
+                                    +998 77 567 34 32
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/mail.png" alt="email"></div>
+                            <div>
+                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424]  capitalize">Email address</h1>
+                                <p class="text-[14px] sm:text-[16x] text-[#242424] font-[400]">eaturkish@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/instagram2.png" alt="instagram"></div>
+                            <div>
+                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Instagram</h1>
+                                <p class="text-[14px] sm:text-[16px] text-[#242424] font-[400]">eaturkish</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/twitter2.png" alt="twitter"></div>
+                            <div>
+                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Twitter</h1>
+                                <p class="text-[16px] text-[#242424] font-[400]">eaturkish</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/facebook2.png" alt="facebook"></div>
+                            <div>
+                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Facebook</h1>
+                                <p class="text-[16px] text-[#242424] font-[400]">eaturkish</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 border-1 border-[#2424241A] rounded-[14px] p-[20px]">
+                        <h1 class="text-[32px] sm:text-[38px] text-[#242424] leading-[34p] font-[600]">Send messege</h1>
+                        <p class="text-[16px] leading-[24px] font-[400] text-[#242424] max-w-[565px] w-full">If you have any questions, you can send us an SMS or contact us by phone you can also contact us via social networks.</p>
+                        <div class="flex gap-[10px] items-center mt-[30px]">
+                            <input class="border-1 border-[#3322441A] rounded-[12px] text-[16px] font-[400] py-[10px] px-[20px] max-w-[385px] w-full" type="text" placeholder="Your name" required>
+                            <input class="border-1 border-[#3322441A] rounded-[12px] text-[16px] font-[400] py-[10px] px-[20px] max-w-[345px] w-full" type="email" placeholder="Email address" required>
+                        </div>
+
+                        <div class="flex gap-[10px] items-center">
+                            <input class="border-1 border-[#3322441A] rounded-[12px] text-[16px] font-[400] py-[10px] px-[20px] max-w-[345px] w-full" type="number" placeholder="Phone number" required>
+                            <input class="border-1 border-[#3322441A] rounded-[12px] text-[16px] font-[400] py-[10px] px-[20px] max-w-[345px] w-full" type="email" placeholder="Subject" required>
+                        </div>
+
+                        <textarea class="max-w-[710px] w-full h-[150px] border-1 border-[#3322441A] rounded-[12px] text-[16px] font-[400] py-[10px] px-[20px]" placeholder="Messege"></textarea>
+
+                        <button class="py-[18px]  px-[10px]:px-[45px] bg-[#BB2339] text-white text-[18px] font-[600] max-w-[170px] whitespace-nowrap sm:max-w-[214px] w-full rounded-[39px] mt-[20px]" type="submit">Send messege</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="bg-[#BB2339]">
 
