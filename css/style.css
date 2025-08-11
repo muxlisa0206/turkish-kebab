@@ -1,5 +1,8 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
 #menu{
-    transform: translateY(100%)
+    transform: translateY(200%)
 }
 .menu{
     transform: translateY(0%) !important;
@@ -10,4 +13,5 @@
 }
 .shrink{
     box-shadow: 2px 2px 20px black;
+    transition: 0.5s;
 }

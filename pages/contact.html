@@ -21,13 +21,18 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="header" class="bg-[#BB2339] fixed z-50 w-full top-0 duration-500">
-        <div class="container mx-auto px-[20px] flex justify-between items-center py-[20px]">
-            <a href="/index.html"><img src="/assets/images/logo.png" alt="logo"></a>
-            <ul class="hidden lg:flex gap-[60px] items-center">
+        <div class="container mx-auto px-[20px] flex justify-between  items-center py-[20px]">
+            <div>
+                <a href="/index.html"><img src="/assets/images/logo.png" alt="logo"></a>
+            </div>
+            <ul class="hidden lg:flex gap-[40px] ml-[550px] items-center">
                 <li>
                     <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/index.html">Home</a>
                 </li>
@@ -41,15 +46,15 @@
                     <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="about.html">About Us</a>
                 </li>
                 <li>
-                    <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="contact.html">Contact Us</a>
+                    <a class="text-[#0cce0c] whitespace-nowrap" href="contact.html">Contact Us</a>
                 </li>
                 <button
-                    class="text-white px-[40px] py-[10px] bg-[#BB2339] border-[2px] border-[white] rounded-[30px] hover:bg-white hover:text-[#BB2339] duration-500">Log
+                    class="text-white px-[40px] py-[10px] bg-[#BB2339] whitespace-nowrap border-[2px] border-[white] rounded-[30px] hover:bg-white hover:text-[#BB2339] duration-500">Log
                     in</button>
             </ul>
             <button id="toggle">
                 <img class="flex cursor-pointer w-[60px] lg:hidden"
-                    src="../assets/images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    src="../assets/images/toggle.svg" alt="toggle">
             </button>
         </div>
     </header>
@@ -63,7 +68,7 @@
         </li>
         <li
             class="border-2 py-[15px] border-white max-w-[160px] sm:max-w-[250px] w-full flex items-center justify-center gap-[10px] rounded-[20px]">
-            <img src="/assets/images/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <img src="/assets/images/menuw.svg" alt="">
             <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/pages/menu.html">Menu</a>
         </li>
         <li
@@ -78,8 +83,8 @@
         </li>
         <li
             class="border-2 py-[15px] border-white max-w-[160px] sm:max-w-[250px] w-full flex items-center justify-center gap-[10px] rounded-[20px]">
-            <img src="/assets/images/call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-            <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/pages/contact.html">Contact</a>
+            <img src="/assets/images/contact2.svg" alt="contact">
+            <a class="text-[#0cce0c] whitespace-nowrap" href="/pages/contact.html">Contact</a>
         </li>
         <li id="close">
             <img class="absolute right-5 top-10 sm:right-10 w-[30px] sm:w-[40px]"
@@ -102,50 +107,49 @@
                     <img class="mt-[10px] w-[60px]" src="/assets/images/spoon.png" alt="qoshiq">
                 </div>
 
-                <div class="grid grid-cols-1 md:flex gap-[50px] pt-[-25px] sm:py-[50px]">
+                <div class="grid grid-cols-1 md:flex gap-[50px] sm:gap-[180px] pt-[-25px] sm:py-[50px]">
 
                     <div class="flex flex-col gap-3">
-                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
-                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/phone.png" alt="phone"></div>
-                            <div>
-                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Phone number</h1>
-                                <a class="text-[14px] sm:text-[16px] w-full h-full text-[#242424] font-[400]" href="tel:884679073">
-                                    +998 77 567 34 32
-                                </a>
-                            </div>
-                        </div>
+                        <a class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px] text-[14px] sm:text-[16px] text-[#242424] font-[400]" href="tel:884679073">
+                                <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/phone.png" alt="phone"></div>
+                                <div>
+                                    <h1 class="text-[18px] sm:text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Phone number</h1>
+                                    <p class="text-[14px] sm:text-[16px] font-[400] text-[#242424]">+998 77 567 34 32</p>
+                                </div>
+                        </a>
 
-                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
-                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/mail.png" alt="email"></div>
+                        <a class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px] text-[14px] sm:text-[16px] text-[#242424] font-[400]" href="https://accounts.google.com/">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/mail.png" alt="main"></div>
                             <div>
-                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424]  capitalize">Email address</h1>
-                                <p class="text-[14px] sm:text-[16x] text-[#242424] font-[400]">eaturkish@gmail.com</p>
+                                <h1 class="text-[18px] sm:text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Email address</h1>
+                                <p class="text-[14px] sm:text-[16px] font-[400] text-[#242424]">eaturkish@gmail.com</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
-                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/instagram2.png" alt="instagram"></div>
+                        <a class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px] text-[14px] sm:text-[16px] text-[#242424] font-[400]" href="https://www.instagram.com/">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/instagram2.png" alt=""></div>
                             <div>
-                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Instagram</h1>
-                                <p class="text-[14px] sm:text-[16px] text-[#242424] font-[400]">eaturkish</p>
+                                <h1 class="text-[18px] sm:text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Instagram</h1>
+                                <p class="text-[14px] sm:text-[16px] font-[400] text-[#242424]">eaturkish</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
-                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/twitter2.png" alt="twitter"></div>
+                        <a class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px] text-[14px] sm:text-[16px] text-[#242424] font-[400]" href="https://x.com/">
+                            <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/twitter2.png" alt="twittre"></div>
                             <div>
-                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Twitter</h1>
-                                <p class="text-[16px] text-[#242424] font-[400]">eaturkish</p>
+                                <h1 class="text-[18px] sm:text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">twitter</h1>
+                                <p class="text-[14px] sm:text-[16px] font-[400] text-[#242424]">eaturkish</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px]">
+                        <a class="w-[350px] flex gap-4 items-center border-1 border-[#2424241A] rounded-[14px] bg-transparent h-auto p-[15px] text-[14px] sm:text-[16px] text-[#242424] font-[400]" href="https://ru-ru.facebook.com/">
                             <div class="w-[60px] h-[60px] rounded-[50%] bg-[#2424240D] flex justify-center items-center"><img src="/assets/images/facebook2.png" alt="facebook"></div>
                             <div>
-                                <h1 class="text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">Facebook</h1>
-                                <p class="text-[16px] text-[#242424] font-[400]">eaturkish</p>
+                                <h1 class="text-[18px] sm:text-[22px] font-[600] leading-[34px] text-[#242424] capitalize">facebook</h1>
+                                <p class="text-[14px] sm:text-[16px] font-[400] text-[#242424]">eaturkish</p>
                             </div>
-                        </div>
+                        </a>
+
                     </div>
 
                     <div class="flex flex-col gap-2 border-1 border-[#2424241A] rounded-[14px] p-[20px]">
@@ -169,11 +173,24 @@
                 </div>
             </div>
         </section>
+
+        <section class="mx-[20px]">
+            <div class="transform -translate-y-[-220px] container mx-auto px-[20px] bg-[#BB2339] flex flex-col gap-[40px] justify-center items-center rounded-[20px] border-1 border-[#FFFFFF66] shadow-[22px_30px_95px_1px_#56565633] ">
+                <p class="text-[23px] font-[700] text-[#FFFFFF] pt-[70px]">Newsletter</p>
+                <h1 class="text-center sm:font-[400] text-[32px] md:text-[48px] text-[#FFFFFF]">Subscribe to Our Newsletter</h1>
+                <p class="text-[16px] font-[400] text-[#FFFFFF]">And never miss latest Updates!</p>
+
+                <form class="flex flex-col gap-3 md:flex-row items-center gap-[20px] pb-[70px]">
+                    <input class="border-1 border-[#F5EFDB80] rounded-[100px] text-[#FFFFFF] px-[20px] py-[10px] font-bold w-[300px] md:w-[585px] hover:text-[#BB2339] hover:bg-white" type="email" placeholder="Email Address" required>
+                    <button class="border-1 border-[#FFFFFF] rounded-[100px] px-[20px] py-[10px] text-[16px] text-[#FFFFFF] font-[700] cursor-pointer hover:text-[#BB2339] hover:bg-white" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-[#BB2339]">
 
-        <div class="container mx-auto px-[20px] pt-[250px] pb-[50px]">
+        <div class="container mx-auto px-[20px] pt-[300px] pb-[50px]">
 
             <div class="flex flex-col gap-[40px] lg:flex-row justify-between items-center">
                 <div class="flex flex-col gap-[10px] items-center">

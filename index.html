@@ -21,15 +21,18 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header" class="bg-[#BB2339] fixed z-50 w-full top-0 duration-500">
-        <div class="container mx-auto px-[20px] flex justify-between gap-[30px] items-center py-[20px]">
+    <header id="header" class="bg-[#BB2339] fixed z-50 w-full top-0">
+        <div class="container mx-auto  flex justify-between gap-[30px] items-center py-[20px]">
             <a href="/index.html"><img src="/assets/images/logo.png" alt="logo"></a>
-            <ul class="hidden lg:flex gap-[60px] items-center">
+            <ul class="hidden lg:flex gap-[40px] ml-[550px] items-center">
                 <li>
-                    <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/index.html">Home</a>
+                    <a class="text-[#0cce0c] whitespace-nowrap" href="/index.html">Home</a>
                 </li>
                 <li>
                     <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/pages/menu.html">Menu</a>
@@ -44,12 +47,12 @@
                     <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/pages/contact.html">Contact Us</a>
                 </li>
                 <button
-                    class="text-white px-[40px] py-[10px] bg-[#BB2339] border-[2px] border-[white] rounded-[30px] hover:bg-white hover:text-[#BB2339] duration-500">Log
+                    class="text-white px-[40px] py-[10px] bg-[#BB2339] whitespace-nowrap border-[2px] border-[white] rounded-[30px] hover:bg-white hover:text-[#BB2339] duration-500">Log
                     in</button>
             </ul>
             <button id="toggle">
                 <img class="flex cursor-pointer w-[60px] lg:hidden"
-                    src="./assets/images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    src="./assets/images/toggle.svg" alt="">
             </button>
         </div>
     </header>
@@ -58,12 +61,12 @@
         class="bg-[#BB2339] transform w-[50vw] h-screen rounded-br-[20px] fixed z-50 justify-center items-center flex flex-col gap-[30px] pt-[50px]">
         <li
             class="border-2 py-[15px] border-white max-w-[160px] sm:max-w-[250px] w-full flex items-center justify-center gap-[10px] rounded-[20px]">
-            <img src="./assets/images/home_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-            <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/index.html">Home</a>
+            <img src="/assets/images/home2.svg" alt="home2">
+            <a class="text-[#0cce0c] whitespace-nowrap" href="/index.html">Home</a>
         </li>
         <li
             class="border-2 py-[15px] border-white max-w-[160px] sm:max-w-[250px] w-full flex items-center justify-center gap-[10px] rounded-[20px]">
-            <img src="/assets/images/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <img src="/assets/images/menuw.svg" alt="menu">
             <a class="text-white hover:text-[#A9B2C3] whitespace-nowrap" href="/pages/menu.html">Menu</a>
         </li>
         <li
@@ -164,7 +167,7 @@
             <div class="container mx-auto px-[20px]">
                 <h1 class="text-[#BB2339] text-[32px] sm:text-[48px] font-[500] pt-[50px]">Our Regular Menu Pack</h1>
 
-                <div class="owl-carousel owl-theme pt-[30px]">
+                <div class="flex gap-[15px] overflow-scroll">
                     <button class="py-[10px] px-[20px] border-[1px] border-[#BB2339] text-[#242424] text-[16px] font-[600] whitespace-nowrap hover:bg-[#BB2339] hover:text-white rounded-[100px]">All</button>
                     <button class="py-[10px] px-[20px] border-[1px] border-[#BB2339] text-[#242424] text-[16px] font-[600] whitespace-nowrap hover:bg-[#BB2339] hover:text-white rounded-[100px]">Shawarma</button>
                     <button class="py-[10px] px-[20px] border-[1px] border-[#BB2339] text-[#242424] text-[16px] font-[600] whitespace-nowrap hover:bg-[#BB2339] hover:text-white rounded-[100px]">Turk Kebab</button>
@@ -479,7 +482,7 @@
 
     <footer class="bg-[#BB2339]">
 
-        <div class="container mx-auto px-[20px] pt-[250px] pb-[50px]">
+        <div class="container mx-auto px-[20px] pt-[300px] pb-[50px]">
 
             <div class="flex flex-col gap-[40px] lg:flex-row justify-between items-center">
                 <div class="flex flex-col gap-[10px] items-center">
